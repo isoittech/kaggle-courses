@@ -176,3 +176,6 @@ submission.csv
 .python-version
 
 .roo/mcp.json
+
+test.csv
+train.csv
