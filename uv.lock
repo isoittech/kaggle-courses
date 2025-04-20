@@ -223,6 +223,7 @@ version = "0.1.0"
 source = { virtual = "." }
 dependencies = [
     { name = "ipykernel" },
+    { name = "learntools" },
     { name = "numpy" },
     { name = "pandas" },
     { name = "scikit-learn" },
@@ -231,9 +232,22 @@ dependencies = [
 [package.metadata]
 requires-dist = [
     { name = "ipykernel", specifier = ">=6.29.5" },
+    { name = "learntools", extras = ["core"], specifier = ">=0.0.20" },
     { name = "numpy", specifier = ">=2.2.4" },
     { name = "pandas", specifier = ">=2.2.3" },
     { name = "scikit-learn", specifier = ">=1.6.1" },
+]
+
+[[package]]
+name = "learntools"
+version = "0.0.20"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "numpy" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/cf/d6/7e99df9bba21a00a96b0020ac49044a9c890aceabbb7b2d60cac661863fb/learntools-0.0.20.tar.gz", hash = "sha256:2f9c3d7ac942078192e0cec78bea0f90a3580c6b4e956b5a8b72abac24f6bae5", size = 7424 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/ea/b3/b02b985f26d4e1bcfd8c0de022dce16bc68e6e0aac1054796e0cea5636a0/learntools-0.0.20-py3-none-any.whl", hash = "sha256:1c88b9408a693a2afa6440df8e87bf31b373428d626b93b09c4af3c3d108f909", size = 7523 },
 ]
 
 [[package]]
