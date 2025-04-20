@@ -1,0 +1,25 @@
+version: "3"
+services:
+  py:
+    user: vscode
+    build:
+      context: .
+      dockerfile: Dockerfile
+    tty: true
+    volumes:
+      - ..:/workspace/kaggle-course:delegated
+
+  # db:
+  #   image: postgres:${POSTGRES_VERSION}
+  #   container_name: ${CONTAINER_NAME}
+  #   ports:
+  #     - "${DB_PORT}:5432"
+  #   restart: always
+  #   environment:
+  #     - POSTGRES_USER=${USER_NAME}
+  #     - POSTGRES_PASSWORD=${USER_PASS}
+  #   volumes:
+  #     - db_vol:/var/lib/postgresql/data
+
+# volumes:
+#   db_vol:

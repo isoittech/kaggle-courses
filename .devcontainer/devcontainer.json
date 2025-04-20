@@ -1,0 +1,73 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the
+// README at: https://github.com/devcontainers/templates/tree/main/src/python
+{
+	"name": "kaggle-course",
+	"dockerComposeFile": "docker-compose.yml",
+	"service": "py",
+	"workspaceFolder": "/workspace/kaggle-course",
+	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
+	"features": {
+		"ghcr.io/devcontainers/features/docker-outside-of-docker:1": {
+			"moby": true,
+			"installDockerBuildx": true,
+			"installDockerComposeSwitch": true,
+			"version": "latest",
+			"dockerDashComposeVersion": "v2"
+		},
+		"ghcr.io/va-h/devcontainers-features/uv:1": {
+			"shellautocompletion": true,
+			"version": "latest"
+		},
+		"ghcr.io/devcontainers/features/node:1": {
+			"nodeGypDependencies": true,
+			"installYarnUsingApt": true,
+			"version": "lts",
+			"pnpmVersion": "latest",
+			"nvmVersion": "latest"
+		},
+		"ghcr.io/devcontainers/features/python:1": {
+			"installTools": true,
+			"installJupyterlab": true,
+			"version": "3.12"
+		}
+	},
+	// Features to add to the dev container. More info: https://containers.dev/features.
+	// "features": {},
+	// Use 'forwardPorts' to make a list of ports inside the container available locally.
+	// "forwardPorts": [],
+	// Use 'postCreateCommand' to run commands after the container is created.
+	// "postCreateCommand": "pip3 install --user -r requirements.txt",
+	// Configure tool-specific properties.
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"MariusAlchimavicius.json-to-ts",
+				"VisualStudioExptTeam.vscodeintellicode",
+				"charliermarsh.ruff",
+				"christian-kohler.path-intellisense",
+				"dbaeumer.vscode-eslint",
+				"donjayamanne.githistory",
+				"esbenp.prettier-vscode",
+				"formulahendry.auto-rename-tag",
+				"formulahendry.code-runner",
+				"humao.rest-client",
+				"mechatroner.rainbow-csv",
+				"mhutchie.git-graph",
+				"ms-python.debugpy",
+				"ms-python.flake8",
+				"ms-python.mypy-type-checker",
+				"ms-python.pylint",
+				"ms-python.python",
+				"ms-toolsai.jupyter",
+				"njpwerner.autodocstring",
+				"oderwat.indent-rainbow",
+				"rooveterinaryinc.roo-cline",
+				"sgryjp.japanese-word-handler",
+				"streetsidesoftware.code-spell-checker",
+				"vscode-icons-team.vscode-icons",
+			],
+		}
+	},
+	// Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
+	"remoteUser": "vscode"
+}

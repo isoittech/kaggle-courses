@@ -1,0 +1,22 @@
+{
+    "cSpell.enabled": false,
+    "files.encoding": "utf8",
+    "files.eol": "\n",
+    "editor.formatOnSave": true,
+    "editor.tabSize": 4,
+    // インデントを空白文字にする
+    "editor.insertSpaces": true,
+    "[typescript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+    },
+    "[typescriptreact]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[markdown]": {
+        "editor.formatOnSave": false
+    },
+    "remote.localPortHost": "allInterfaces",
+    "python.analysis.extraPaths": [
+        "common/"
+    ],
+}
