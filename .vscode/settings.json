@@ -19,4 +19,5 @@
     "python.analysis.extraPaths": [
         "common/"
     ],
+    "json.format.enable": true,
 }
